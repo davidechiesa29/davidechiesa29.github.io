@@ -4,11 +4,79 @@
 		<title>Portfolio</title>
 		<meta author="Davide Chiesa">
 
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 		<style>
 			.header {
+				position: fixed;	
+				display: flex;
+				height: 60px;
+				justify-content: space-between;
+				left: 0;
+				right: 0;
+				top: 0;
+				box-shadow: 0.5px 0.5px 3px gray;
+			}
+
+			.name-box {
+				padding-left: 30px;
+				padding-right: 30px;
+				font-family: Manrope;
+				font-weight: 1000;
+				height: 60px;
+				color: black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
+
+
+			}
 			
+			.header-box{
+				padding-left: 30px;
+				padding-right: 30px;
+				font-family: Manrope;
+				font-weight: bold;
+				height: 60px;
+				color: black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.profile-box {
+				display: flex;
+				height: 60px;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.profile-icon{
+				border-radius: 50%;
+				height: 45px;
+				box-shadow: 0.5px 0.5px 3px black;
+			}
+
+			.header-box:hover{
+				background-color: rgb(232,232,232);
+			}
+			
+			.right-header{
+				align-items: center;
 				display: flex;
 			}
+	
+			.left-header{
+				display: flex;
+				align-items: center;
+				justify-content: center:
+			}
+
+
 
 		</style>
 
@@ -16,11 +84,17 @@
 
 	<body>
 		<div class="header">
-			<div class="profile-icon"> <img src="../pfp.jpg"> </div>
-			<div> Davide Chiesa </div>
-			<div> Experiences </div>
-			<div> Projects </div>
-			<div> Skills </div>
+			<div class="left-header">
+				<div class="name-box"> Davide Chiesa </div>
+				<div class="profile-box">
+					<img class="profile-icon" src="../pfp.jpg">
+				</div>
+			</div>
+			<div class="right-header">
+				<div class="header-box"> Experiences </div>
+				<div class="header-box"> Projects </div>
+				<div class="header-box"> Skills </div>
+			</div>
 		</div>
 		<div class="home-page-body">
 			
