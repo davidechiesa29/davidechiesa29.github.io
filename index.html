@@ -10,6 +10,14 @@
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 		<style>
+
+			.home-page-body{
+				margin-top: 120px;
+				display: flex;
+				flex-direction: row;
+
+			}
+
 			.header {
 				position: fixed;	
 				display: flex;
@@ -19,6 +27,8 @@
 				right: 0;
 				top: 0;
 				box-shadow: 0.5px 0.5px 3px gray;
+				z-index: 100;
+				background-color: white;
 			}
 
 			.name-box {
@@ -48,19 +58,6 @@
 				justify-content: center;
 			}
 
-			.profile-box {
-				display: flex;
-				height: 60px;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.profile-icon{
-				border-radius: 50%;
-				height: 45px;
-				box-shadow: 0.5px 0.5px 3px black;
-			}
-
 			.header-box:hover{
 				background-color: rgb(232,232,232);
 			}
@@ -76,6 +73,41 @@
 				align-items: center;
 				justify-content: center:
 			}
+			
+			.portrait-box{
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+			.portrait-image {
+				width: 35vw;
+				border-radius: 70%;
+				box-shadow: 1px 1px 5px black;
+			}
+
+			.about-me {
+				display: flex;
+				width: 65vw;
+				flex-direction: column;
+				align-items: center;	
+				padding-left: 5vw;
+				padding-right: 200px;
+			}
+			
+			.about-me-title {
+				font-family: Manrope;
+				font-size: 60px;
+				font-weight: bold;
+			}
+			
+			.background {
+				z-index: -1;
+				width: 100vw;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0.4;
+			}		
 
 
 
@@ -84,6 +116,7 @@
 	</head>
 
 	<body>
+		<img class="background" src="../../Desktop/background.jpg">
 		<div class="header">
 			<div class="left-header">
 				<div class="name-box"> Davide Chiesa </div>
@@ -95,7 +128,13 @@
 			</div>
 		</div>
 		<div class="home-page-body">
-			
+			<div class="portrait-box">
+				<img class="portrait-image" src="../../Downloads/portrait.jpg">
+			</div>
+			<div class="about-me">
+				<div class="about-me-title"> About Me </div>
+				<div class="description"> tba </div>
+			</div>		
 		</div>
 	</body>	
 
