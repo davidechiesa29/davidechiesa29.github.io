@@ -15,6 +15,7 @@
 				margin-top: 120px;
 				display: flex;
 				flex-direction: row;
+				margin-bottom: 120px;
 
 			}
 
@@ -76,9 +77,9 @@
 			}
 			
 			.portrait-box{
-				padding-top: 3vw;
 				padding-left: 10vw;
 				padding-right: 5vw;
+				padding-bottom: 3vw;
 			}
 
 			.portrait-image {
@@ -104,12 +105,51 @@
 			
 			.background {
 				z-index: -1;
-				width: 100vw;
+				left: 0;
+				right: 0;
 				position: absolute;
 				top: 0;
 				left: 0;
-				opacity: 0.08;
-			}		
+				width: 100%;
+				opacity: 0.10;
+			}	
+			
+			.description {
+				font-family: Manrope;
+				padding-top: 40px;
+				line-height: 2;
+				font-size: 20px;
+				font-weight: 500;
+				color: rgb(54, 69, 79)
+			}
+			
+			.floor{
+				display: flex;
+				background-color: black;
+				color: white;
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				justify-content: start;
+				align-items: center;
+				font-family: Manrope;
+				opacity: 0.9;
+				height: 60px;
+			}	
+			
+			.floor-box{
+				padding-left: 30px;
+				padding-right: 30px;
+				height: 60px;	
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.floor-box:hover{
+				opacity: 0.8;
+			}	
 
 
 
@@ -118,7 +158,6 @@
 	</head>
 
 	<body>
-		<img class="background" src="background.jpg">
 		<div class="header">
 			<div class="left-header">
 				<div class="name-box"> Davide Chiesa </div>
@@ -130,13 +169,25 @@
 			</div>
 		</div>
 		<div class="home-page-body">
+			<div> <img class="background" src="background.jpg"> </div>
 			<div class="portrait-box">
 				<img class="portrait-image" src="portrait.jpg">
 			</div>
 			<div class="about-me">
 				<div class="about-me-title"> About Me </div>
-				<div class="description"> tba </div>
+				<div class="description"> Hi there! My name is Davide Chiesa, and I'm a freshman majoring in 
+					Computer Science and Mathematics at the University of Wisconsin-Madison. I currently
+					specialize in object-oriented programming, though I'm interested in exploring other 
+					realms of CS such as Machine Learning and Cybersecurity. Outside of academics, I enjoy 
+					recreational long distance running and weightlifting. I'm also passionate about philosophy,
+					religion, and modern politics. 
+				</div>
 			</div>		
+		</div>
+		<div class="floor">
+			<div class="floor-box"> Resume </div>
+			<div class="floor-box"> LinkedIn </div>
+			<div class="floor-box"> GitHub </div>
 		</div>
 	</body>	
 
