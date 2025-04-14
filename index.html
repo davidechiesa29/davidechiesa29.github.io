@@ -11,12 +11,15 @@
 
 		<style>
 
+			body{
+				background-color: rgb(245,255, 255);
+			}
+
 			.home-page-body{
 				margin-top: 120px;
 				display: flex;
 				flex-direction: row;
 				margin-bottom: 120px;
-
 			}
 
 			.header {
@@ -103,17 +106,6 @@
 				font-weight: bold;
 			}
 			
-			.background {
-				z-index: -1;
-				left: 0;
-				right: 0;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				opacity: 0.10;
-			}	
-			
 			.description {
 				font-family: Manrope;
 				padding-top: 40px;
@@ -149,6 +141,10 @@
 			
 			.floor-box:hover{
 				opacity: 0.8;
+			}
+
+			.link {
+				color: white;
 			}	
 
 
@@ -169,7 +165,6 @@
 			</div>
 		</div>
 		<div class="home-page-body">
-			<div> <img class="background" src="background.jpg"> </div>
 			<div class="portrait-box">
 				<img class="portrait-image" src="portrait.jpg">
 			</div>
@@ -179,15 +174,21 @@
 					Computer Science and Mathematics at the University of Wisconsin-Madison. I currently
 					specialize in object-oriented programming, though I'm interested in exploring other 
 					realms of CS such as Machine Learning and Cybersecurity. Outside of academics, I enjoy 
-					recreational long distance running and weightlifting. I'm also passionate about philosophy,
-					religion, and modern politics. 
+					recreational long distance running and weightlifting. I'm also passionate about cosmology,
+					religion, and politics. 
 				</div>
 			</div>		
 		</div>
 		<div class="floor">
-			<div class="floor-box"> Resume </div>
-			<div class="floor-box"> LinkedIn </div>
-			<div class="floor-box"> GitHub </div>
+			<div class="floor-box">
+				<a href="https://drive.google.com/file/d/1l3agtSlwN6z4bZ_Gy4sCqlZdKQz-ibI8/view?usp=sharing" class="link"> Resume </a>
+			</div>
+			<div class="floor-box">
+				<a href="https://www.linkedin.com/in/davide-chiesa-753167305/" class="link"> LinkedIn </a>
+			</div>
+			<div class="floor-box">
+				<a href="https://github.com/davidechiesa29" class="link"> GitHub </a>
+			</div>
 		</div>
 	</body>	
 
