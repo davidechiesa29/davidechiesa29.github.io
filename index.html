@@ -12,7 +12,7 @@
 		<style>
 
 			body{
-				background-color: rgb(245,255, 255);
+				background-color: rgb(249,255, 255);
 			}
 
 			.home-page-body{
@@ -50,6 +50,7 @@
 			
 			.name-box:hover{
 				background-color: rgb(232,232,232);
+				cursor: pointer;
 			}
 			
 			.header-box{
@@ -66,6 +67,7 @@
 
 			.header-box:hover{
 				background-color: rgb(232,232,232);
+				cursor: pointer;
 			}
 			
 			.right-header{
@@ -150,21 +152,39 @@
 
 
 		</style>
+		<script>
+			function experiencesPage() {
+				document.getElementById("intro").style.display = "none";
+			}
+			
+			function projectsPage() {
+				document.getElementById("intro").style.display = "none";
+			}
+
+			function skillPage() {	
+				document.getElementById("intro").style.display = "none";
+			}
+
+			function mainPage() {
+				document.getElementById("intro").style.display = "flex";
+			}
+
+		</script>
 
 	</head>
 
 	<body>
 		<div class="header">
 			<div class="left-header">
-				<div class="name-box"> Davide Chiesa </div>
+				<div onclick="mainPage()" class="name-box"> Davide Chiesa </div>
 			</div>
 			<div class="right-header">
-				<div class="header-box"> Experiences </div>
-				<div class="header-box"> Projects </div>
-				<div class="header-box"> Skills </div>
+				<div onclick="experiencesPage()" class="header-box"> Experiences </div>
+				<div onclick="projectsPage()" class="header-box"> Projects </div>
+				<div onclick ="skillPage()" class="header-box"> Skills </div>
 			</div>
 		</div>
-		<div class="home-page-body">
+		<div class="home-page-body" id="intro">
 			<div class="portrait-box">
 				<img class="portrait-image" src="portrait.jpg">
 			</div>
