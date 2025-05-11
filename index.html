@@ -84,7 +84,6 @@
 			.portrait-box{
 				padding-left: 10vw;
 				padding-right: 5vw;
-				padding-bottom: 3vw;
 			}
 
 			.portrait-image {
@@ -147,26 +146,63 @@
 
 			.link {
 				color: white;
+			}
+
+			#experiences {
+				margin-top: 120px;
+				display: none;
+				justify-content: center;
 			}	
 
+			.title {
+				font-weight: bold;
+				font-family: Manrope;
+				font-size: 60px;
+				text-align: center;
+			}
+
+			#projects {
+				display: none;
+				margin-top: 120px;
+				justify-content: center;
+			}
+
+			#skills {
+				display: none;
+				margin-top: 120px;
+				justify-content: center;
+			}
 
 
 		</style>
 		<script>
 			function experiencesPage() {
 				document.getElementById("intro").style.display = "none";
+				document.getElementById("projects").style.display = "none";
+				document.getElementById("skills").style.display = "none";
+				document.getElementById("experiences").style.display = "flex";
+				console.log("hello world");
 			}
 			
 			function projectsPage() {
 				document.getElementById("intro").style.display = "none";
+				document.getElementById("experiences").style.display = "none";
+				document.getElementById("skills").style.display = "none";
+			 	document.getElementById("projects").style.display = "flex";	
 			}
 
 			function skillPage() {	
 				document.getElementById("intro").style.display = "none";
+				document.getElementById("experiences").style.display = "none";
+				document.getElementById("projects").style.display = "none"
+				document.getElementById("skills").style.display = "flex";
 			}
 
 			function mainPage() {
 				document.getElementById("intro").style.display = "flex";
+				document.getElementById("experiences").style.display = "none";
+				document.getElementById("skills").style.display = "none";
+				document.getElementById("projects").style.display = "none";
 			}
 
 		</script>
@@ -198,6 +234,20 @@
 					religion, and politics. 
 				</div>
 			</div>		
+		</div>
+		<div id="experiences"> 
+			
+			<div class="title"> Experiences </div>
+			<div class="experiences-list"> </div>
+
+
+
+		</div>
+		<div id="projects">
+			<div class="title"> Projects </div>
+		</div>
+		<div id="skills">
+			<div class="title"> Skills </div>
 		</div>
 		<div class="floor">
 			<div class="floor-box">
