@@ -12,7 +12,6 @@
 		<style>
 
 			body{
-				background-color: rgb(249,255, 255);
 			}
 
 			.home-page-body{
@@ -84,6 +83,7 @@
 			.portrait-box{
 				padding-left: 10vw;
 				padding-right: 5vw;
+				padding-top: 5vh;
 			}
 
 			.portrait-image {
@@ -151,7 +151,6 @@
 			#experiences {
 				margin-top: 120px;
 				display: none;
-				justify-content: center;
 			}	
 
 			.title {
@@ -159,6 +158,7 @@
 				font-family: Manrope;
 				font-size: 60px;
 				text-align: center;
+				margin-bottom: 50px;
 			}
 
 			#projects {
@@ -174,13 +174,32 @@
 			}
 
 
+			.experiences-list {
+				display: grid;
+				justify-content: center;
+			}
+
+
+			.background {
+				position: fixed;
+				z-index: -100;
+				top: 0;
+				left: 0;
+				right: 0;
+				background-repeat: repeat;
+				background-image: url("watercolor.jpg");
+				opacity: 0.2;
+			}
+
+
+
 		</style>
 		<script>
 			function experiencesPage() {
 				document.getElementById("intro").style.display = "none";
 				document.getElementById("projects").style.display = "none";
 				document.getElementById("skills").style.display = "none";
-				document.getElementById("experiences").style.display = "flex";
+				document.getElementById("experiences").style.display = "block";
 				console.log("hello world");
 			}
 			
@@ -220,6 +239,9 @@
 				<div onclick ="skillPage()" class="header-box"> Skills </div>
 			</div>
 		</div>
+		<div class="background">
+			<img id="background-image" src="watercolor.jpg">
+		</div>
 		<div class="home-page-body" id="intro">
 			<div class="portrait-box">
 				<img class="portrait-image" src="portrait.jpg">
@@ -238,7 +260,10 @@
 		<div id="experiences"> 
 			
 			<div class="title"> Experiences </div>
-			<div class="experiences-list"> </div>
+			<div class="experiences-list"> 
+				<div class="experience"> experience 1</div>
+				<div class ="experience"> experience 2</div>	
+			</div>
 
 
 
@@ -251,13 +276,13 @@
 		</div>
 		<div class="floor">
 			<div class="floor-box">
-				<a href="https://drive.google.com/file/d/1l3agtSlwN6z4bZ_Gy4sCqlZdKQz-ibI8/view?usp=sharing" class="link"> Resume </a>
+				<a target="_blank" href="https://drive.google.com/file/d/1l3agtSlwN6z4bZ_Gy4sCqlZdKQz-ibI8/view?usp=sharing" class="link"> Resume </a>
 			</div>
 			<div class="floor-box">
-				<a href="https://www.linkedin.com/in/davide-chiesa-753167305/" class="link"> LinkedIn </a>
+				<a target="_blank" href="https://www.linkedin.com/in/davide-chiesa-753167305/" class="link"> LinkedIn </a>
 			</div>
 			<div class="floor-box">
-				<a href="https://github.com/davidechiesa29" class="link"> GitHub </a>
+				<a target="_blank" href="https://github.com/davidechiesa29" class="link"> GitHub </a>
 			</div>
 		</div>
 	</body>	
