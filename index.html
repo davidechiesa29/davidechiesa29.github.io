@@ -159,6 +159,7 @@
 				font-size: 60px;
 				text-align: center;
 				margin-bottom: 50px;
+				display: block;
 			}
 
 			#projects {
@@ -191,6 +192,65 @@
 				opacity: 0.2;
 			}
 
+			.experience-title {
+				font-family: Manrope;
+				font-weight: 600;
+				font-size: 40px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			
+			.about-experience {
+				padding-left: 100px;
+			}
+			
+			.experience {
+				display: flex;
+				margin-bottom: 100px;
+			}
+			
+			.experience-description {
+				font-family: Manrope;
+				font-size: 20px;
+				width: 40vw;
+				color: rgb(54, 69, 79);
+				line-height: 2;
+				font-weight: 500;
+			}
+
+
+			img {
+				box-shadow: 1px 1px 5px black;
+			}
+			
+			#ps16-location {
+				border-radius: 50%;
+				width: 300px;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			#ps16-portrait {
+				border-radius: 50%;
+				width: 400px;
+			}
+
+			#shorewood-location {
+				border-radius: 50%;
+				width: 400px;
+				display: block;
+				margin-bottom: 10px;
+			}
+			
+			#scratch-exemplar {
+				border-radius: 50%;
+				width: 300px;
+			}
+			
+			.experience-images {
+				padding-top: 5px;	
+			}
+		
 
 
 		</style>
@@ -207,7 +267,7 @@
 				document.getElementById("intro").style.display = "none";
 				document.getElementById("experiences").style.display = "none";
 				document.getElementById("skills").style.display = "none";
-			 	document.getElementById("projects").style.display = "flex";	
+			 	document.getElementById("projects").style.display = "block";	
 			}
 
 			function skillPage() {	
@@ -261,8 +321,43 @@
 			
 			<div class="title"> Experiences </div>
 			<div class="experiences-list"> 
-				<div class="experience"> experience 1</div>
-				<div class ="experience"> experience 2</div>	
+				<div class="experience"> 
+					<div class = "experience-images">
+						<img id="ps16-location" src="./ps16.webp">
+						<img id="ps16-portrait" src="./ps16-portrait.jpg">
+					</div>
+					<div class="about-experience">
+						<div class="experience-title">
+							Summer Teaching Intern
+						</div>
+						<div class="experience-description">
+							I dedicated two months of my summer in 2024 to experience teaching young children at the Cornelia F. Bradford Elementary School
+							in Jersey City, NJ. I worked 30 hours per week, and most days would consist of helping the teacher 
+							manage the classroom-- whether guiding students through warm-up activities, helping them solve math problems, or assisting
+							them in writing the alphabet. Aside from teaching, I also had to chaperone the children on field trips and during reccess 
+							hours, developing my organizational and leadership skills. 
+						</div>
+					</div>
+				</div>
+				<div class ="experience"> 
+					<div class = "experience-images">
+						<img id="shorewood-location" src="./shorwood.jpg">
+						<img id="scratch-exemplar" src="./scratch.png">						
+					</div>
+					<div class ="about-experience">
+						<div class="experience-title">
+							Scratch Club Facilitator
+						</div>
+						<div class="experience-description">
+							I collaborated with a group of three UW-Madison students during my second semester to facilitate a Scratch Club at a local 
+							elementry school known as Shorewood Hills. The club would meet once per week, and we would develop weekly lesson plans 
+							geared towards the deficencies in the students' programming abilities. The club was a mix of self-agency and guided learning, with the first 
+							half of the semester relegated towards teaching the students to understand how to use loops, conditionals, and special Scratch features
+							such as event and broadcasting blocks, while the second half was utilized to work on personal projects.
+						</div>
+					</div>
+	
+				</div>	
 			</div>
 
 
@@ -270,6 +365,7 @@
 		</div>
 		<div id="projects">
 			<div class="title"> Projects </div>
+			<div> coming soon </div>
 		</div>
 		<div id="skills">
 			<div class="title"> Skills </div>
