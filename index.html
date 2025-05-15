@@ -247,6 +247,40 @@
 			.experience-images {
 				padding-top: 50px;	
 			}
+	
+			.skills-description {
+				font-family: Manrope;
+				font-size: 30px;
+				color: rgb(54, 69, 79);
+				font-weight: 500;
+				text-align: center;
+				line-height: 2;
+			}
+			
+			#skills-page {
+				display: flex;
+				justify-content: center;
+			}
+
+			.skills-type {
+				font-family: Manrope;
+				font-weight: 600;
+				font-size: 40px;
+				text-align: center;
+				margin-bottom: 20px;
+
+			}
+			
+
+			.skills-list {
+				display: block;
+				width: 30vw;
+				
+			}
+		
+			
+
+			
 		
 
 
@@ -257,7 +291,6 @@
 				document.getElementById("projects").style.display = "none";
 				document.getElementById("skills").style.display = "none";
 				document.getElementById("experiences").style.display = "block";
-				console.log("hello world");
 			}
 			
 			function projectsPage() {
@@ -271,7 +304,7 @@
 				document.getElementById("intro").style.display = "none";
 				document.getElementById("experiences").style.display = "none";
 				document.getElementById("projects").style.display = "none"
-				document.getElementById("skills").style.display = "flex";
+				document.getElementById("skills").style.display = "block";
 			}
 
 			function mainPage() {
@@ -328,7 +361,7 @@
 							Summer Teaching Intern
 						</div>
 						<div class="experience-description">
-							I dedicated two months of my summer in 2024 to experience teaching young children at the Cornelia F. Bradford Elementary School
+							I dedicated two months of my summer in 2024 to experience teaching young students at the Cornelia F. Bradford Elementary School
 							in Jersey City, NJ. I worked 30 hours per week, and most days would consist of helping the teacher 
 							manage the classroom-- whether guiding students through warm-up activities, helping them solve math problems, or assisting
 							them in writing the alphabet. Aside from teaching, I also had to chaperone the children on field trips and during reccess 
@@ -348,7 +381,7 @@
 						<div class="experience-description">
 							I collaborated with a group of three UW-Madison students during my second semester to facilitate a Scratch Club at Shorewood Hills Elementary School.
 							The club would meet once per week, and we developed weekly lesson plans 
-							geared towards addressing deficencies in the students' programming abilities. The club was a mix of self-agency and guided learning, with the first 
+							geared towards addressing deficiencies in the students' programming abilities. The club was a mix of self-agency and guided learning, with the first
 							half of the semester relegated towards teaching the students to understand loops, conditionals, and special Scratch features
 							such as event and broadcasting blocks, while the second half was utilized to work on personal projects.
 						</div>
@@ -362,10 +395,42 @@
 		</div>
 		<div id="projects">
 			<div class="title"> Projects </div>
-			<div> coming soon </div>
+			<div style="text-align: center;"> coming soon </div>
 		</div>
 		<div id="skills">
 			<div class="title"> Skills </div>
+			<div id="skills-page">
+				<div class="skills-list">
+					<div class="skills-type"> Technical </div>
+					<div class = "skills-description"> 
+						Git/Github <br>
+						Version Control <br>
+						Java <br>
+						HTML/CSS <br>
+						JavaScript <br>
+					</div>
+				</div>
+				<div class=skills-list">
+					<div class="skills-type"> Soft </div>
+					<div class = "skills-description">
+						Trust-worthy <br>
+						Dependable <br>
+						Flexible <br>
+						Communicative <br>
+						Organized
+					</div>
+				</div>
+				<div class="skills-list">
+					<div class="skills-type"> Coursework </div>
+					<div class="skills-description">
+						Data Structures <br>
+						Discrete Mathematics <br>
+						Linear Algebra <br>
+						Differential Equations <br>
+						Combinatorics 
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="floor">
 			<div class="floor-box">
