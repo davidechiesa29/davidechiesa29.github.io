@@ -285,36 +285,6 @@
 
 
 		</style>
-		<script>
-			function experiencesPage() {
-				document.getElementById("intro").style.display = "none";
-				document.getElementById("projects").style.display = "none";
-				document.getElementById("skills").style.display = "none";
-				document.getElementById("experiences").style.display = "block";
-			}
-			
-			function projectsPage() {
-				document.getElementById("intro").style.display = "none";
-				document.getElementById("experiences").style.display = "none";
-				document.getElementById("skills").style.display = "none";
-			 	document.getElementById("projects").style.display = "block";	
-			}
-
-			function skillPage() {	
-				document.getElementById("intro").style.display = "none";
-				document.getElementById("experiences").style.display = "none";
-				document.getElementById("projects").style.display = "none"
-				document.getElementById("skills").style.display = "block";
-			}
-
-			function mainPage() {
-				document.getElementById("intro").style.display = "flex";
-				document.getElementById("experiences").style.display = "none";
-				document.getElementById("skills").style.display = "none";
-				document.getElementById("projects").style.display = "none";
-			}
-
-		</script>
 
 	</head>
 
@@ -330,11 +300,11 @@
 			</div>
 		</div>
 		<div class="background">
-			<img id="background-image" src="watercolor.jpg">
+			<img id="background-image" src="images/watercolor.jpg">
 		</div>
 		<div class="home-page-body" id="intro">
 			<div class="portrait-box">
-				<img class="portrait-image" src="portrait.jpg">
+				<img class="portrait-image" src="images/portrait.jpg">
 			</div>
 			<div class="about-me">
 				<div class="about-me-title"> About Me </div>
@@ -353,8 +323,8 @@
 			<div class="experiences-list"> 
 				<div class="experience"> 
 					<div class = "experience-images">
-						<img id="ps16-location" src="./ps16.webp">
-						<img id="ps16-portrait" src="./ps16-portrait.jpg">
+						<img id="ps16-location" src="images/ps16.webp">
+						<img id="ps16-portrait" src="images/ps16-portrait.jpg">
 					</div>
 					<div class="about-experience">
 						<div class="experience-title">
@@ -371,8 +341,8 @@
 				</div>
 				<div class ="experience"> 
 					<div class = "experience-images">
-						<img id="shorewood-location" src="./shorwood.jpg">
-						<img id="scratch-exemplar" src="./scratch.png">						
+						<img id="shorewood-location" src="images/shorewood.jpg">
+						<img id="scratch-exemplar" src="images/scratch.png">						
 					</div>
 					<div class ="about-experience">
 						<div class="experience-title">
@@ -443,6 +413,8 @@
 				<a target="_blank" href="https://github.com/davidechiesa29" class="link"> GitHub </a>
 			</div>
 		</div>
+		
+		<script src="script.js"></script>
 	</body>	
 
 
