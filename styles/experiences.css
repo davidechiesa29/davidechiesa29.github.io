@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300    ..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#experiences {
+	margin-top: 120px;
+	display: none;
+}	
+
+.experiences-list {
+	display: grid;
+	justify-content: center;
+}
+
+.experience-title {
+	font-family: Manrope;
+	font-weight: 600;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+			
+.about-experience {
+	padding-left: 100px;
+}
+			
+.experience {
+	display: flex;
+	margin-bottom: 100px;
+}
+			
+.experience-description {
+	font-family: Manrope;
+	font-size: 20px;
+	width: 40vw;
+	color: rgb(54, 69, 79);
+	line-height: 2;
+	font-weight: 500;
+}
+
+#ps16-location {
+	border-radius: 2%;
+	width: 300px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#ps16-portrait {
+	border-radius: 2%;
+	width: 300px;
+}
+
+#shorewood-location {
+	border-radius: 2%;
+	width: 300px;
+	display: block;
+	margin-bottom: 10px;
+}
+			
+#scratch-exemplar {
+	border-radius: 2%;
+	width: 300px;
+}
+			
+.experience-images {
+	padding-top: 50px;	
+}
+
+
