@@ -1,5 +1,52 @@
 #projects {
 	display: none;
 	margin-top: 120px;
+}
+
+.projects-list {
+	display: grid;
 	justify-content: center;
+}
+
+.project-title {
+	font-family: Manrope;
+	font-weight: 600;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.about-project {
+	padding-left: 100px;
+}
+
+.project {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.project-description {
+	font-family: Manrope;
+	font-size: 20px;
+	width: 40vw;
+	color: rgb(54, 69, 79);
+	line-height: 2;
+	font-weight: 500;
+}
+
+.project-images {
+	padding-top: 50px;
+}
+
+#RunStataHome {
+	width: 400px;
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+#RunStataActivities {
+	width: 400px;
+	display: block;
+
 }
